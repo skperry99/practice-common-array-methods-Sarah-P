@@ -28,3 +28,23 @@ the addition.
 Declare two variables and use them with bracket notation to log the selected order
 dynamically
 */
+
+let orderSystem = [["Latte","Tea","Espresso"],["Croissant","Muffin","Bagel"]];
+
+let drinkOrderLength = orderSystem[0].length;
+let pastryOrderLength = orderSystem[1].length;
+
+console.log(orderSystem[1][1]);
+console.log(orderSystem[1][2]);
+console.log(orderSystem[1][0]);
+
+let pastryOrder = 0;
+let drinkOrder = 0;
+console.log(orderSystem[drinkOrder][pastryOrder]);
+
+orderSystem[0].push("flat white");
+console.log(drinkOrderLength);
+
+let newOrderX = 0;
+let newOrderY = 3;
+console.log(orderSystem[newOrderX][newOrderY]);
